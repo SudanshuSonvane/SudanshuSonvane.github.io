@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Happy Birthday, Misha Patel!</title>
+    <style>
+        body {
+            font-family: "Dancing Script", cursive;
+            text-align: center;
+            background-color: #152238;
+            color: #ffffff;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #ff6f61;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        
+        #live-time {
+            font-size: 32px;
+            margin-top: 20px;
+        }
+        
+        #current-date {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #f04941;
+        }
+        
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+        
+        .fadeIn {
+            animation-name: fadeIn;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <h1 class="animated fadeIn">Happy Birthday, Misha.</h1>
+    <p class="animated fadeIn">Dear Misha,</p>
+    <p class="animated fadeIn">Wishing you the happiest of birthdays! May this special day bring you immense joy, love, and fulfillment.</p>
+    <p class="animated fadeIn">Your presence in my life is a true blessing. You bring warmth, laughter, and endless positivity wherever you go.</p>
+    <p class="animated fadeIn">May the coming year be filled with incredible adventures, successful achievements, and memorable moments.</p>
+    <p class="animated fadeIn">Enjoy your birthday to the fullest and cherish the wonderful memories that will be created today.</p>
+    <p class="animated fadeIn">With love and warmest wishes,</p>
+    <p class="animated fadeIn">Sudanshu</p>
+
+    <div id="live-time" class="animated fadeIn"></div>
+    <div id="current-date" class="animated fadeIn"></div>
+
+    <script>
+        function updateTime() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            var date = now.toDateString();
+
+            var timeString = hours.toString().padStart(2, '0') + ':' +
+                minutes.toString().padStart(2, '0') + ':' +
+                seconds.toString().padStart(2, '0');
+
+            document.getElementById('live-time').textContent = 'Current Time: ' + timeString;
+            document.getElementById('current-date').textContent = 'Today\'s Date: ' + date;
+        }
+
+        setInterval(updateTime, 1000);
+    </script>
+    <br>
+
+    <a class="btn" href="javascript:void(0);" onclick="celebrate()" class="animated fadeIn">Celebrate!</a>
+
+    <script>
+        function celebrate() {
+            alert("I'm sorry for my previous responses i am not up to your expectations and for I made mistakes, please pardon me!");
+            // You can add more celebratory actions here
+        }
+    </script>
+</body>
+
+</html>
